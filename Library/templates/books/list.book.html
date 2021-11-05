@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitoblar</title>
+</head>
+{% block content %}
+<body>
+    {% for i in books %}
+        <h1>{{ i.title }}</h1>
+        <h5>{{ i.text }}</h5>
+        <h6>{{ i.sbn }}</h6>
+    {% endfor %}
+</body>
+{% endblock %}
+</html>
